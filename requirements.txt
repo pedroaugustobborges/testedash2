@@ -7,3 +7,4 @@ abc-analysis  # Check the correct package name
 dash-auth
 Babel
 dash-bootstrap-templates
+gunicorn
