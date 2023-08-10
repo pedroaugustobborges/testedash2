@@ -56,7 +56,7 @@ url_theme2 = dbc.themes.DARKLY
 
 
 # ===== Reading n cleaning File ====== #
-df = pd.read_csv("assets\\trimestre1.csv")
+df = pd.read_csv("assets/trimestre1.csv")
 df_cru = df.copy()
 
 # Transformando em inteiros e  retirando o cifrão R$
