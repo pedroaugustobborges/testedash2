@@ -112,20 +112,21 @@ def entidade_filter(entidade):
     return mask
 
 def convert_to_text(trimestre):
-    match trimestre:
-        case 0:
-            x = 'Todos trimestres'
-        case 1:
-            x = 'Primeiro trimestre de 2023'
-        case 2:
-            x = 'Segundo trimestre de 2023'
-        case 3:
-            x = 'Terceiro trimestre de 2023'
-        case 4:
-            x = '3'
+    if trimestre == 0:
+        x = 'Todos trimestres'
+    elif trimestre == 1:
+        x = 'Primeiro trimestre de 2023'
+    elif trimestre == 2:
+        x = 'Segundo trimestre de 2023'
+    elif trimestre == 3:
+        x = 'Terceiro trimestre de 2023'
+    elif trimestre == 4:
+        x = '3'
+    else:
+        x = 'Trimestre inválido'
      
-
     return x
+
 
 
 # =========  Layout  =========== #
